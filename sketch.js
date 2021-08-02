@@ -61,6 +61,14 @@ if(keyDown("DOWN_ARROW") || touches.lenght>0){
 player.y = player.y+30;
 }
 
+if(keyDown("RIGHT_ARROW") || touches.width>0){
+player.x = player.x+30;
+}
+
+if(keyDown("LEFT_ARROW") || touches.width>0){
+player.x = player.x-30;
+}
+ 
 if(keyWentDown("space")){
 player.addImage(shooter_shooting);
 }
